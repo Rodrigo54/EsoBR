@@ -337,10 +337,10 @@ function EsoBR_init()
 			LMP.MediaTable.font["Skyrim Handwritten"] = nil
 			LMP.MediaTable.font["ProseAntique"] = nil
 			LMP.MediaTable.font["Trajan Pro"] = nil
-			LMP:Register("font", "Univers 67", "EsoBRunivers67.otf")
+			LMP:Register("font", "Univers 67", "EsoBR/fonts/univers67.otf")
 			LMP:Register("font", "Univers 57", "EsoBR/fonts/univers57.otf")
 			LMP:Register("font", "Univers 55", "EsoBR/fonts/univers57.otf")
-			LMP:Register("font", "Skyrim Handwritten", "EsoBR/fonts/handwritten_bold.ttf")
+			LMP:Register("font", "Skyrim Handwritten", "EsoBR/fonts/handwritten_bold.otf")
 			LMP:Register("font", "ProseAntique", "EsoBR/fonts/ProseAntique.otf")
 			LMP:Register("font", "Trajan Pro", "EsoBR/fonts/trajanpro-regular.otf")
 			LMP:SetDefault("font", "Univers 57")
@@ -355,7 +355,7 @@ function EsoBR_init()
 			["Fontin Regular"] = "EsoBR/fonts/univers57.otf",
 			["Fontin SmallCaps"] = "EsoBR/fonts/univers57.otf",
 			["ProseAntique"] = "EsoBR/fonts/ProseAntique.otf",
-			["Skyrim Handwritten"]= "EsoBR/fonts/handwritten_bold.ttf",
+			["Skyrim Handwritten"]= "EsoBR/fonts/handwritten_bold.otf",
 			["Trajan Pro"] = "EsoBR/fonts/trajanpro-regular.otf",
 			["Univers 55"] = "EsoBR/fonts/univers57.otf",
 			["Univers 57"] = "EsoBR/fonts/univers57.otf",
@@ -371,7 +371,7 @@ function EsoBR_init()
 			["Fontin Regular"] = "EsoBR/fonts/univers57.otf",
 			["Fontin SmallCaps"] = "EsoBR/fonts/univers57.otf",
 			["ProseAntique"] = "EsoBR/fonts/ProseAntique.otf",
-			["Skyrim Handwritten"]= "EsoBR/fonts/handwritten_bold.ttf",
+			["Skyrim Handwritten"]= "EsoBR/fonts/handwritten_bold.otf",
 			["Trajan Pro"] = "EsoBR/fonts/trajanpro-regular.otf",
 			["Univers 55"] = "EsoBR/fonts/univers57.otf",
 			["Univers 57"] = "EsoBR/fonts/univers57.otf",
