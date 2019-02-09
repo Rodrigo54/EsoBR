@@ -1,0 +1,52 @@
+﻿ESOBR. Tradução de The Elder Scrolls Online para português-------------------------------------------------------------ESTE MATERIAL NÃO FOI FEITO, GARANTIDO NEM APOIADO PELA 
+ZENIMAXONLINE STUDIOS NEM POR NENHUMA DE SUAS FILIAIS, isentando de toda responsabilidade---------------------------ESTE MATERIAL É DISTRIBUÍDO NA ESPERANÇA 
+DE QUE SEJA ÚTIL, MAS SEM QUALQUER GARANTIA, INCLUINDO SEM GARANTIA IMPLÍCITA DE COMERCIALIZAÇÃO OU SEM NENHUM ACORDO PARA UM PROPÓSITO 
+ESPECÍFICO. SE NÃO CONCORDAR COM OS TERMOS DEFINIDOS ACIMA, NÃO USE ESTE MATERIAL.
+
+Instalação
+-----------
+
+A tradução consiste em três pastas que contêm vários arquivos.
+Todos devem ser instalados na pasta AddOns do jogo:
+
+~ / Documents / Elder Scrolls Online / live / AddOns / EsoUI
+~ / Documents / Elder Scrolls Online / live / AddOns / gamedata
+~ / Documents / Elder Scrolls Online / live / AddOns / fonts
+
+Para habilitar a tradução, você deve editar o seguinte arquivo de
+configuração:
+
+~ / Documents / Elder Scrolls Online / live /UserSettings.txt
+
+E mude a linha que define o idioma,
+
+Mudança
+
+SET Language.2 "en"
+
+por
+
+SET Language.2 "br"
+
+NOTA: Certifique-se de que o editor escreve aspas corretamente. É provável
+que ele coloque “br” em vez de "br".
+
+Cada vez que o jogo é executado a partir do "launcher", ele irá substituir a
+Variável "Idioma" com o idioma selecionado, ou seja, algum idioma
+oficial em vez do português brasileiro, para que isso não aconteça,
+você tem que abrir o jogo diretamente sem passar pelo "launcher", 
+ou seja, através do atalho:
+
+... / The Elder Scrolls Online / game_mac / pubplayerclient / eso64
+
+Para jogar em português, recomenda-se sempre executar por esse atalho, no caso de
+ter alguma atualização, atualize pelo Launcher e em seguida feche e então execute 
+eso64.exe.
+
+Outra solução possível é eliminar as permissões de escrita de cada usuário nas propriedades
+do arquivo:
+
+~ / Documents / Elder Scrolls Online / live /UserSettings.txt
+
+Desta forma, o «Launcher» não pode alterá-lo. No entanto, você também não pode
+salvar qualquer outro ajuste que ocorra no jogo.

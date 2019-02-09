@@ -1,0 +1,12 @@
+<Bindings>
+  <Layer name="SI_KEYBINDINGS_CATEGORY_GENERAL">
+    <Category name="EsoBR">
+      <Action name="ESOBR_EN">
+        <Down>EsoBR_Change("en")</Down>
+      </Action>
+      <Action name="ESOBR_BR">
+        <Down>EsoBR_Change("br")</Down>
+      </Action>
+    </Category>
+  </Layer>
+</Bindings>

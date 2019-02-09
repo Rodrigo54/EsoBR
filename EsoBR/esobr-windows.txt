@@ -1,0 +1,36 @@
+﻿ESOBR Tradução de The Elder Scrolls Online para português
+-------------------------------------------------- -----------
+
+ESTE MATERIAL NÃO É FEITO, GARANTIDO OU APOIADO POR ZENIMAX
+STUDIOS ONLINE, NEM POR NENHUMA DAS SUAS AFILIADAS.
+
+Isenção de responsabilidade
+---------------------------
+
+ESTE MATERIAL É DISTRIBUÍDO COM A ESPERANÇA QUE SEJA ÚTIL, MAS
+SEM QUALQUER GARANTIA, INCLUINDO SEM GARANTIA IMPLÍCITA DE COMERCIALIZAÇÃO OU
+SEM UM ACORDO PARA UM PROPÓSITO ESPECÍFICO.
+
+SE NÃO CONCORDAR COM OS TERMOS DEFINIDOS ACIMA,
+NÃO USE ESTE MATERIAL.
+
+Instalação
+-----------
+
+A tradução consiste em cinco pastas que contêm vários arquivos.
+Todos devem ser instalados na pasta AddOns do jogo:
+
+"Documentos" / Elder Scrolls Online / live / AddOns / EsoUI
+"Documentos" / Elder Scrolls Online / live / AddOns / gamedata
+"Documentos" / Elder Scrolls Online / live / AddOns / fonts
+"Documentos" / Elder Scrolls Online / live / AddOns / Libs
+"Documentos" / Elder Scrolls Online / live / AddOns / EsoPL
+
+Créditos
+---------------
+
+Queremos agradecer o apoio de Jorge, admin do Cervanteso, projeto de 
+Tradução para espanhol do jogo, que tornou possível e viável nossa tradução.
+Além do addon de ativação da tradução, concebido por EmiruTegryfon (skrybowie Tamriel), 
+o autor do addon de tradução polaco EsoPL.
+-------------------------------------------------------------
