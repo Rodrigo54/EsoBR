@@ -1,6 +1,6 @@
 ﻿local EsoBR = {}
 EsoBR.Flags = { "en", "br" }
-EsoBR.Version = "1.0.0"
+EsoBR.Version = "1.1.0"
 EsoBR.Name = "EsoBR"
 EsoBR.Defaults = {
 	Anchor = { BOTTOMRIGHT, BOTTOMRIGHT, 0, 7 },
