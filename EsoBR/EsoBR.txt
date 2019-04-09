@@ -1,7 +1,7 @@
 ## Title: EsoBR
 ## Author: Mestre Frooke & Skrybowie Tamriel 
 ## Description: Unofficial Portuguese Translation for ESO.
-## Version: 1.1.1
+## Version: 1.1.2
 ## APIVersion: 100026
 ## SavedVariables: EsoBRVariables
 ## OptionalDependsOn: LibAddonMenu-2.0

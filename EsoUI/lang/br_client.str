@@ -5856,7 +5856,7 @@
 [SI_NOTIFICATIONTYPE19] = "Evento"
 [SI_NOTIFICATIONTYPE2] = "Convite para Guilda"
 [SI_NOTIFICATIONTYPE20] = "Presenteamento desbloqueado"
-[SI_NOTIFICATIONTYPE21] = "Recomensa diária"
+[SI_NOTIFICATIONTYPE21] = "Recompensa diária"
 [SI_NOTIFICATIONTYPE22] = "Presente recebido"
 [SI_NOTIFICATIONTYPE23] = "Presente aceito"
 [SI_NOTIFICATIONTYPE24] = "Presente devolvido"
