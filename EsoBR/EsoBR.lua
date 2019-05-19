@@ -1,6 +1,6 @@
 ﻿local EsoBR = {}
 EsoBR.Flags = { "en", "br" }
-EsoBR.Version = "1.1.0"
+EsoBR.Version = "1.1.2"
 EsoBR.Name = "EsoBR"
 EsoBR.Defaults = {
 	Anchor = { BOTTOMRIGHT, BOTTOMRIGHT, 0, 7 },
@@ -18,7 +18,7 @@ local panelData = {
     type = "panel",
     name = "EsoBR",
     displayName = "Tradução Brasileira não-oficial do ESO.",
-    author = "Mestre Frooke & Skrybowie Tamriel ",
+    author = "Mestre Frooke, @RODRIGO5 e Skrybowie Tamriel ",
     version = EsoBR.Version,
     slashCommand = "/esobr",
     registerForRefresh = true,
@@ -313,6 +313,8 @@ function EsoBR_init()
 	
 	SetSCTKeyboardFont("EsoBR/fonts/univers67.otf|29|soft-shadow-thick")
 	SetNameplateKeyboardFont("EsoBR/fonts/univers67.otf", 4)
+
+	LFGDoubleNames(EsoBR)
 	
 	SafeAddString(SI_DIGIT_GROUP_SEPARATOR, " ", 1)
 	
