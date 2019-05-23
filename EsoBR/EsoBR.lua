@@ -91,7 +91,7 @@ function EsoBR:MapNameStyle()
 	end
 	
 	local scrollData = ZO_ScrollList_GetDataList(ZO_WorldMapLocationsList)
-		ZO_ClearNumericallyIndexedTable(scrollData)
+	ZO_ClearNumericallyIndexedTable(scrollData)
 	WORLD_MAP_LOCATIONS_DATA:RefreshLocationList()
 	WORLD_MAP_LOCATIONS:BuildLocationList()
 end
@@ -271,7 +271,7 @@ function EsoBR:ShowMsgBox(title, msg, typ)
 			[1] = 
 			{
 				keybind = "DIALOG_PRIMARY",
-				text = "Abrir na Web", 
+				text = "Ir para a página", 
 				callback =
 					function ()
 						RequestOpenUnsafeURL("http://www.universoeso.com.br/traducao")
