@@ -3900,5 +3900,6 @@ locationNames = {
 	["winiarnia zimara"] = "Zimar's Winery",
 	["książki i inskrypcje zohreh"] = "Zohreh's Books & Inscriptions",
 	["wejście zthgnthaz"] = "Zthgnthaz Entrance",
- ["cânion desolado"] = "Craglorn",
- ["semprestio"] = "Summerset", }
+	["cânion desolado"] = "Craglorn",
+	["semprestio"] = "Summerset", 
+}

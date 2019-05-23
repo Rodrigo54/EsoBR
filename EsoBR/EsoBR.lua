@@ -1,6 +1,6 @@
 ﻿local EsoBR = {}
 EsoBR.Flags = { "en", "br" }
-EsoBR.Version = "1.1.2"
+EsoBR.Version = "1.2.0"
 EsoBR.Name = "EsoBR"
 EsoBR.Defaults = {
 	Anchor = { BOTTOMRIGHT, BOTTOMRIGHT, 0, 7 },
@@ -15,14 +15,14 @@ EsoBR.Settings = EsoBR.Defaults
 EsoBR.SettingsCharacter = EsoBR.DefaultsCharacter
 
 local panelData = {
-    type = "panel",
-    name = "EsoBR",
-    displayName = "Tradução Brasileira não-oficial do ESO.",
-    author = "Mestre Frooke, @RODRIGO5 e Skrybowie Tamriel ",
-    version = EsoBR.Version,
-    slashCommand = "/esobr",
-    registerForRefresh = true,
-    registerForDefaults = true,
+	type = "panel",
+	name = "EsoBR",
+	displayName = "Tradução Brasileira não-oficial do ESO.",
+	author = "Mestre Frooke e Skrybowie Tamriel ",
+	version = EsoBR.Version,
+	slashCommand = "/esobr",
+	registerForRefresh = true,
+	registerForDefaults = true,
 	website = "http:/www.universoeso.com.br"
 }
 
@@ -91,7 +91,7 @@ function EsoBR:MapNameStyle()
 	end
 	
 	local scrollData = ZO_ScrollList_GetDataList(ZO_WorldMapLocationsList)
-    ZO_ClearNumericallyIndexedTable(scrollData)
+		ZO_ClearNumericallyIndexedTable(scrollData)
 	WORLD_MAP_LOCATIONS_DATA:RefreshLocationList()
 	WORLD_MAP_LOCATIONS:BuildLocationList()
 end
@@ -248,13 +248,13 @@ function EsoBR:ShowMsgBox(title, msg, typ)
 					function ()
 						EsoBR_Change("br")
 					end,
-                clickSound = SOUNDS.DIALOG_ACCEPT,
+				clickSound = SOUNDS.DIALOG_ACCEPT,
 			},
 			[2] =
 			{
 				keybind = "DIALOG_NEGATIVE",
-                text = "Cancelar",
-                clickSound = SOUNDS.DIALOG_DECLINE,
+				text = "Cancelar",
+				clickSound = SOUNDS.DIALOG_DECLINE,
 			},
 		}
 	elseif typ == 2 then
@@ -263,7 +263,7 @@ function EsoBR:ShowMsgBox(title, msg, typ)
 			{
 				keybind = "DIALOG_PRIMARY",
 				text = SI_OK,
-                clickSound = SOUNDS.DIALOG_ACCEPT,
+				clickSound = SOUNDS.DIALOG_ACCEPT,
 			}
 		}--nowy kod start
 	elseif typ == 3 then
@@ -271,18 +271,18 @@ function EsoBR:ShowMsgBox(title, msg, typ)
 			[1] = 
 			{
 				keybind = "DIALOG_PRIMARY",
-				text = "Idź do strony", 
+				text = "Abrir na Web", 
 				callback =
 					function ()
-						RequestOpenUnsafeURL("http://eso-spolszczenie.eu/")
+						RequestOpenUnsafeURL("http://www.universoeso.com.br/traducao")
 					end,
-                clickSound = SOUNDS.DIALOG_ACCEPT,
+				clickSound = SOUNDS.DIALOG_ACCEPT,
 			},
 			[2] =
 			{
 				keybind = "DIALOG_NEGATIVE",
-                text = "Cancelar",
-                clickSound = SOUNDS.DIALOG_DECLINE,
+				text = "Cancelar",
+				clickSound = SOUNDS.DIALOG_DECLINE,
 			},
 		}
 	end
@@ -319,7 +319,7 @@ function EsoBR_init()
 	SafeAddString(SI_DIGIT_GROUP_SEPARATOR, " ", 1)
 	
 	local DIGIT_GROUP_REPLACER_THRESHOLD = zo_pow(10, GetDigitGroupingSize())
-    
+		
 	function ZO_CommaDelimitNumber(amount)
 		if amount < DIGIT_GROUP_REPLACER_THRESHOLD then
 			return tostring(amount)
