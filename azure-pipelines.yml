@@ -23,9 +23,9 @@ steps:
   inputs:
     includeRootFolder: false
     rootFolderOrFile: |
-      'EsoBR/**'
-      'EsoUI/**'
-      'gamedata/**'
+      EsoBR/**
+      EsoUI/**
+      gamedata/**
     archiveFile: '$(Build.ArtifactStagingDirectory)/EsoBR_v$(version).zip'
 
 - task: GithubRelease@0
