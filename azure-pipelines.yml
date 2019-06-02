@@ -12,8 +12,8 @@ pool:
 variables:
 - group: EsoUI
 - name: version 
-  value: 1.2.0
-- name: compatible 
+  value: 1.2.1
+- name: compatible
   value: 5.0.5
 
 steps:
@@ -39,12 +39,9 @@ steps:
       $(Build.ArtifactStagingDirectory)/*.zip
       $(Build.ArtifactStagingDirectory)/README.txt
 
-- task: cURLUploader@2
+- task: CmdLine@2
   displayName: 'Deploy to EsoUI'
   inputs:
-    remotePath:
-    files: $(Build.ArtifactStagingDirectory)\EsoBR_v$(version).zip
-    url: $(update_url)
-    authtype: userAndPass
-    redirectStderr: false
-    options: '-XPOST -H "x-api-token: $(token)" -F "id=$(id)" -F "version=$(version)" -F "compatible=$(compatible)"'
+    script: |
+      npm install
+      npm run deploy $(update_url) $(Build.ArtifactStagingDirectory)\EsoBR_v$(version).zip $(token) $(id) $(version) $(compatible)
