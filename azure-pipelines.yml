@@ -39,7 +39,10 @@ steps:
       $(Build.ArtifactStagingDirectory)/*.zip
       $(Build.ArtifactStagingDirectory)/README.txt
 
-- task: CmdLine@2
+- task: cURLUploader@2
   displayName: 'Deploy to EsoUI'
   inputs:
-    script: 'curl -v -H "x-api-token: $(token)" -F "id=$(id)" -F "version=$(version)" -F "compatible=$(compatible)" -F "updatefile=@$(Build.ArtifactStagingDirectory)\EsoBR_v$(version).zip" $(update_url)'
+    files: $(Build.ArtifactStagingDirectory)\EsoBR_v$(version).zip
+    url: $(update_url)
+    authtype: userAndPass
+    options: '-H "x-api-token: $(token)" -F "id=$(id)" -F "version=$(version)" -F "compatible=$(compatible)"'
