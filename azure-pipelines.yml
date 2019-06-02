@@ -12,7 +12,7 @@ pool:
 variables:
 - group: EsoUI
 - name: version 
-  value: 1.2.1
+  value: 1.2.2
 - name: compatible
   value: 5.0.5
 
