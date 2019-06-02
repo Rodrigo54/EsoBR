@@ -46,4 +46,8 @@ steps:
     files: $(Build.ArtifactStagingDirectory)\EsoBR_v$(version).zip
     url: $(update_url)
     authtype: userAndPass
-    options: '-H "x-api-token: $(token)" -F "id=$(id)" -F "version=$(version)" -F "compatible=$(compatible)"'
+    options: |
+      '-H "x-api-token: $(token)"'
+      -F "id=$(id)" 
+      -F "version=$(version)"
+      -F "compatible=$(compatible)"
