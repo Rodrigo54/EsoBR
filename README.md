@@ -1,6 +1,8 @@
 # ESOBR
 A community addon for [Elder Scrolls Online](https://www.elderscrollsonline.com)
 
+[![Build Status](https://dev.azure.com/rodrigo254mix/EsoBR/_apis/build/status/Rodrigo54.EsoBR?branchName=master)](https://dev.azure.com/rodrigo254mix/EsoBR/_build/latest?definitionId=6&branchName=master)
+
 ![Imgur](https://i.imgur.com/9wkTtcK.png)
 
 ### [Download here](https://www.esoui.com/downloads/info2256) (also available via Minion)
