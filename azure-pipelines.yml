@@ -42,7 +42,7 @@ steps:
 
 - task: cURLUploader@2
   inputs:
-    url: $(update_url)
+    serviceEndpoint: $(update_url)
     files: $(Build.ArtifactStagingDirectory)/*.zip
     options: |
       -H "x-api-token: $(token)"
