@@ -21,7 +21,6 @@ steps:
 - task: ArchiveFiles@2
   displayName: 'Zip files'
   inputs:
-    includeRootFolder: false
     rootFolderOrFile: |
       EsoBR
       EsoUI
