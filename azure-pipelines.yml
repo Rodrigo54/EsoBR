@@ -1,0 +1,47 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: 'windows-2019'
+
+variables:
+- group: EsoUI
+- name: version 
+  value: 1.2.0
+- name: compatible 
+  value: 5.0.5
+
+steps:
+- task: ArchiveFiles@2
+  displayName: 'Zip files'
+  inputs:
+    rootFolderOrFile: |
+      EsoBR
+      EsoUI
+      gamedata
+    archiveFile: '$(Build.ArtifactStagingDirectory)/EsoBR_v$(version).zip'
+
+- task: GithubRelease@0
+  displayName: 'Create GitHub Release'
+  inputs:
+    gitHubConnection: GithubRodrigo54
+    repositoryName: '$(Build.Repository.Name)'
+    action: edit
+    target: '$(Build.SourceVersion)'
+    tagSource: auto
+    tag: $(version)
+    assets: |
+      $(Build.ArtifactStagingDirectory)/*.zip
+      $(Build.ArtifactStagingDirectory)/README.txt
+
+- task: CmdLine@2
+  displayName: 'Deploy to EsoUI'
+  inputs:
+    script: |
+      npm install
+      npm run deploy $(update_url) $(Build.ArtifactStagingDirectory)\EsoBR_v$(version).zip $(token) $(id) $(version) $(compatible)
