@@ -15,8 +15,6 @@ variables:
   value: 1.2.0
 - name: compatible 
   value: 5.0.5
-- name: update_url
-  value: https://api.esoui.com/addons/updatetest
 
 steps:
 - task: ArchiveFiles@2
@@ -41,12 +39,7 @@ steps:
       $(Build.ArtifactStagingDirectory)/*.zip
       $(Build.ArtifactStagingDirectory)/README.txt
 
-- task: cURLUploader@2
+- task: CmdLine@2
+  displayName: 'Deploy to EsoUI'
   inputs:
-    serviceEndpoint: $(update_url)
-    files: $(Build.ArtifactStagingDirectory)/*.zip
-    options: |
-      -H "x-api-token: $(token)"
-      -F "id=$(id)" 
-      -F "version=$(version)" 
-      -F "compatible=$(compatible)"
+    script: 'curl -H "x-api-token: $(token)" -F "id=$(id)" -F "version=$(version)" -F "compatible=$(compatible)" -F "updatefile=@$(Build.ArtifactStagingDirectory)/EsoBR_v$(version).zip" $(update_url)'
