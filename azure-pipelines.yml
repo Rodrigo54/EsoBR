@@ -42,6 +42,7 @@ steps:
 - task: cURLUploader@2
   displayName: 'Deploy to EsoUI'
   inputs:
+    remotePath:
     files: $(Build.ArtifactStagingDirectory)\EsoBR_v$(version).zip
     url: $(update_url)
     authtype: userAndPass
