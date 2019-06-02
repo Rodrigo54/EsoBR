@@ -42,4 +42,4 @@ steps:
 - task: CmdLine@2
   displayName: 'Deploy to EsoUI'
   inputs:
-    script: 'curl -H "x-api-token: $(token)" -F "id=$(id)" -F "version=$(version)" -F "compatible=$(compatible)" -F "updatefile=@$(Build.ArtifactStagingDirectory)/EsoBR_v$(version).zip" $(update_url)'
+    script: 'curl -v -H "x-api-token: $(token)" -F "id=$(id)" -F "version=$(version)" -F "compatible=$(compatible)" -F "updatefile=@$(Build.ArtifactStagingDirectory)\EsoBR_v$(version).zip" $(update_url)'
