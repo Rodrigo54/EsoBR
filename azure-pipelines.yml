@@ -47,7 +47,7 @@ steps:
     url: $(update_url)
     authtype: userAndPass
     options: |
-      '-H "x-api-token: $(token)"'
+      -H "x-api-token: $(token)"
       -F "id=$(id)" 
       -F "version=$(version)"
       -F "compatible=$(compatible)"
