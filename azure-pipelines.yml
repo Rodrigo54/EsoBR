@@ -16,7 +16,6 @@ variables:
 - name: compatible 
   value: 5.0.5
 
-
 steps:
 - task: ArchiveFiles@2
   displayName: 'Zip files'
