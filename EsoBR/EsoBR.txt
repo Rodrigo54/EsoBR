@@ -1,8 +1,8 @@
 ## Title: Eso|c1bc426B|cead519R|r
 ## Author: |c18a7eaMestre Frooke|r e Skrybowie Tamriel
 ## Description: Unofficial Portuguese Translation for ESO.
-## Version: 1.2.3
-## AddOnVersion: 10203
+## Version: 1.2.4
+## AddOnVersion: 10204
 ## APIVersion: 100027
 ## SavedVariables: EsoBRVariables
 ## OptionalDependsOn: LibStub LibAddonMenu-2.0
