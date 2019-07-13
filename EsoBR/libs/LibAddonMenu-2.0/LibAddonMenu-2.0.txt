@@ -14,8 +14,6 @@
 ##
 ## You can read the full terms at https://account.elderscrollsonline.com/add-on-terms
 
-LibStub\LibStub.lua
-
 LibAddonMenu-2.0\LibAddonMenu-2.0.lua
 
 LibAddonMenu-2.0\controls\panel.lua
