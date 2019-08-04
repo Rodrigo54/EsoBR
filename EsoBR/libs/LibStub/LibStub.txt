@@ -1,8 +1,9 @@
+## APIVersion: 100027 100028
 ## Title: LibStub
-## APIVersion: 100024
 ## Description: Universal Library Stub
 ## Credits: Kaelten, Cladhaire, ckknight, Mikk, Ammo, Nevcairiel, ported to ESO by Seerah
-## Version: 1.0 r4
-## AddOnVersion: 4
+## Version: 1.0 r6
+## AddOnVersion: 6
+## IsLibrary: true
 
-LibStub.lua
+LibStub\LibStub.lua
