@@ -912,7 +912,7 @@
 [SI_DAMAGETYPE3] = "Ígneo"
 [SI_DAMAGETYPE4] = "Elétrico"
 [SI_DAMAGETYPE5] = "Daédrico"
-[SI_DAMAGETYPE6] = "Álgido"
+[SI_DAMAGETYPE6] = "de Gelo"
 [SI_DAMAGETYPE7] = "Terra"
 [SI_DAMAGETYPE8] = "Mágico"
 [SI_DAMAGETYPE9] = "Afogando"
