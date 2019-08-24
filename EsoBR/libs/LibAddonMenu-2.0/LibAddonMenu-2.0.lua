@@ -1,4 +1,4 @@
--- LibAddonMenu-2.0 & its files © Ryan Lakanen (Seerah)         --
+﻿-- LibAddonMenu-2.0 & its files © Ryan Lakanen (Seerah)         --
 -- Distributed under The Artistic License 2.0 (see LICENSE)     --
 ------------------------------------------------------------------
 
@@ -469,7 +469,7 @@ local localization = {
     },
 }
 
-util.L = ZO_ShallowTableCopy(localization[GetCVar("Language.2")] or {}, localization["en"])
+util.L = ZO_ShallowTableCopy(localization[GetCVar("Language.2")] or {}, localization["br"])
 util.GetTooltipText = GetStringFromValue -- deprecated, use util.GetStringFromValue instead
 util.GetStringFromValue = GetStringFromValue
 util.GetDefaultValue = GetDefaultValue
