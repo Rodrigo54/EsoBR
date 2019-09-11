@@ -2,6 +2,7 @@
 A community addon for [Elder Scrolls Online](https://www.elderscrollsonline.com)
 
 [![Build Status](https://dev.azure.com/rodrigo254mix/EsoBR/_apis/build/status/Rodrigo54.EsoBR?branchName=master)](https://dev.azure.com/rodrigo254mix/EsoBR/_build/latest?definitionId=6&branchName=master)
+[![Discord](https://img.shields.io/discord/314269267140935680?color=7289DA&label=Discord%20)](https://discord.gg/XrZsKXf)
 
 ![Imgur](https://i.imgur.com/9wkTtcK.png)
 
